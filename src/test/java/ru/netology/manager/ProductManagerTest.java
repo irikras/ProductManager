@@ -26,34 +26,34 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByNameBook(){
-        Product[]actual=manager.searchBy("B2");
-        Product[]expected=new Product[]{second};
+    public void shouldSearchByNameBook() {
+        Product[] actual = manager.searchBy("B2");
+        Product[] expected = new Product[]{second};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
-    public void shouldSearchByAuthorBook(){
-        Product[]actual=manager.searchBy("A1");
-        Product[]expected=new Product[]{first};
+    public void shouldSearchByAuthorBook() {
+        Product[] actual = manager.searchBy("A1");
+        Product[] expected = new Product[]{first};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
-    public void shouldSearchByNameSmartphone(){
-        Product[]actual=manager.searchBy("S1");
-        Product[]expected=new Product[]{third};
+    public void shouldSearchByNameSmartphone() {
+        Product[] actual = manager.searchBy("S1");
+        Product[] expected = new Product[]{third};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
-    public void shouldSearchByManufacturerBook(){
-        Product[]actual=manager.searchBy("M2");
-        Product[]expected=new Product[]{fourth};
+    public void shouldSearchByManufacturerBook() {
+        Product[] actual = manager.searchBy("M2");
+        Product[] expected = new Product[]{fourth};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
     }
 }

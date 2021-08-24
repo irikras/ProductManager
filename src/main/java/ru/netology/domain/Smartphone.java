@@ -23,8 +23,9 @@ public class Smartphone extends Product {
         this.manufacturer = manufacturer;
     }
 
+    @Override
     public boolean matches(String search) {
-        return super.matches(search) ||this.getManufacturer().matches(search);
+        return super.matches(search) || this.getManufacturer().matches(search);
     }
 
     @Override
